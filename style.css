@@ -11,13 +11,14 @@ body {
 }
 
 /* .background {
-    width: 100%;
+    width: 1440px;
     height: 490px;
     background: transparent url(images/bg-desktop.png) repeat-x 0 0;
     z-index: -100;
     background-repeat: no-repeat;
     background-position: bottom;
     position: fixed;
+    background-size: contain;
     bottom: 0;
 } */
 
@@ -187,6 +188,8 @@ body {
     align-items: center;
     border-radius: 10px;
     position: relative;
+    top: 40px;
+    right: 50px;
 }
 
 
@@ -196,4 +199,44 @@ body {
     border-radius: 10px;
     background-color: hsl(228, 56%, 26%);
     height: 155px;
+}
+
+
+@media (max-width: 430px) {
+
+    body {
+        background-image: url(images/bg-mobile.png);
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .mobile-row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mobile-row .container3 {
+        height: 215px;
+    }
+
+
+
+
+    /* .background {
+        width: 100%;
+        height: 690px;
+        background: transparent url(images/bg-desktop.png) repeat-x 0 0;
+        z-index: -100;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: fixed;
+        background-size: cover;
+        bottom: 0;
+    } */
+
+
 }
